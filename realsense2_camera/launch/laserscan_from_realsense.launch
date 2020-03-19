@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+  <include file="$(find depthimage_to_laserscan)/launch/depthimage_to_laserscan.launch"/>
+
+  <node pkg="tf" name="depth_cam_to_base_link" type="static_transform_publisher"
+          args="0.0 0 0.0 0.0 0.0 0 base_link camera_depth_frame 100" />
+
+</launch>
