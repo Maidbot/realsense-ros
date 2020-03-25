@@ -1,0 +1,10 @@
+software-properties-common
+
+librealsense2-utils
+ros-melodic-librealsense2
+
+ros-melodic-ddynamic-reconfigure
+ros-melodic-nodelet
+ros-melodic-image-geometry
+ros-melodic-cv-bridge
+ros-melodic-image-transport
