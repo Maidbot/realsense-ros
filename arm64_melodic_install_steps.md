@@ -39,3 +39,13 @@ This was installed when librealsense was on v2.33.1.
   * `source /opt/ros/melodic/setup.bash`
   * `catkin build`
   * `source devel/setup.bash`
+
+* ### Running
+
+  * `roslaunch realsense2_camera rs_camera.launch`
+  * To visualize laserscan, and if you have the depthimage_to_laserscan package installed, run
+    `roslaunch realsense2_camera laserscan_from_realsense.launch`
+  
+  * #### Note
+    If running in docker, the docker container might need to be privileged with access to the USB bus and the host network (for ROS visualization from a remote computer). Something like:
+    docker run -it --privileged --net=host -v /dev/bus/usb:/dev/bus/usb cd0c427c0648 /bin/bash
