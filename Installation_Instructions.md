@@ -1,6 +1,6 @@
 ## Installation Instructions
 
-This was installed when librealsense was on v2.33.1.
+This was installed when librealsense was on v2.33.1. Has been tested on Toradex with Melodic (does not work here with Kinetic), and on a dev laptop with Kinetic.
 
 * ### Install the ROS distribution
 
